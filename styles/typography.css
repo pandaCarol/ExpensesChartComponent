@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+* {
+    font-family: 'DM Sans', sans-serif;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+body {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+footer, footer > * {
+    font-size: 11px;
+}
+
+/* all the calculated results */
+article p {
+    font-size: 2rem;
+    font-weight: 700;  
+}
+
+#spendingInfo {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+#totalThisMonth {
+    font-size: 2.7rem;
+}
+
+#fromLastMonth {
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 450px) {
+    body {
+        font-size: 14px;
+    }
+
+    article p {
+        font-size: 1.5rem;
+    }
+
+    #totalThisMonth {
+        font-size: 2rem;
+    }
+
+    #spendingInfo {
+        font-size: 1.5rem;
+    }
+
+}
+

@@ -1,0 +1,35 @@
+:root {
+    --Cream-bgd: hsl(27, 66%, 92%);
+    --SoftRed-balanceBgd: hsl(10, 79%, 65%);
+    --Cyan-maxSpending: hsl(186, 34%, 60%);
+
+    --VeryPaleOrange-s1Font: hsl(33, 100%, 98%);
+    --DarkBrown-s2Nrheader: hsl(25, 47%, 15%);
+    --MediumBrown-s2TxtHr: hsl(28, 10%, 53%);
+    --footerLink: hsl(228, 45%, 44%);
+}
+
+body {
+    background-color: var(--Cream-bgd);
+}
+
+footer a {
+    color: var(--footerLink);
+}
+
+.container > article:nth-child(2) {
+    background-color: var(--VeryPaleOrange-s1Font);
+}
+
+div > article:nth-child(1) {
+    background-color: var(--SoftRed-balanceBgd);
+    color: var(--VeryPaleOrange-s1Font);
+}
+
+div > article:nth-child(2){
+    color: var(--MediumBrown-s2TxtHr);
+}
+
+#spendingInfo, #totalThisMonth, #fromLastMonth {
+    color: var(--DarkBrown-s2Nrheader);
+}

@@ -1,0 +1,51 @@
+@import url(color.css);
+
+#spendingInfo > div {
+    display:grid;
+    grid-template-columns: repeat(7, 1fr);
+    height: auto;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+#spendingInfo > div > div{
+    display:block;
+    font-size: 1rem;
+    margin: 0.5rem 0 1rem;
+
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0.5px;
+}
+
+#spendingInfo > div > div > :nth-child(1) {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--MediumBrown-s2TxtHr);
+}
+
+#spendingInfo > div > div > :nth-child(2) {
+    width: 75%;
+    margin: 0.5rem auto;
+    border-radius: 3px;
+}
+
+#spendingInfo > div > div > :nth-child(3) {
+    border-radius: 3px;
+    background-color: var(--DarkBrown-s2Nrheader);
+    color: white;
+    font-size: 0.8rem;
+    width: 100%;
+    text-align: center;
+    line-height: 200%;
+    visibility:hidden;
+}
+
+#spendingInfo > div > div > :nth-child(2):hover + :nth-child(3){
+    visibility: visible;
+}
+
+#spendingInfo > div > div > :nth-child(2):hover {
+    cursor: pointer;
+}

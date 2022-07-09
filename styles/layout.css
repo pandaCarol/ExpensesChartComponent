@@ -1,0 +1,101 @@
+@import url(color.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+footer {
+    text-align: center;
+}
+
+main {
+    height: 95%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+   width: 30rem;
+   margin: 1rem;
+   padding: 0 1rem;
+}
+
+.container > article {
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--MediumBrown-s2TxtHr);
+}
+
+/* my balance block */
+div > article:nth-child(1) {
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    background-position: right 2rem center;
+}
+
+/* all the titles before the calculated results */
+h3 {
+    line-height: 2rem;
+}
+
+/* spending block */
+#spendingInfo {
+    margin: 1rem auto;
+}
+
+
+/* the 2nd block */
+.result {
+    margin: 2rem auto 0;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+}
+
+.result section:last-child {
+    position: absolute;
+    right: 0;
+    bottom: 0.3rem;
+
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
+
+.result section:last-child p{
+    text-align: right;
+}
+
+@media only screen and (max-width: 374px){
+    .result {
+        display:inline-block;
+    }
+
+    .result section:last-child {
+        position: inherit;
+        display: block;
+    }
+
+    .result section:last-child p{
+        text-align: inherit;
+    }
+}
+
+
